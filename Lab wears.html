@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+      header{
+            background-color: rgb(215, 233, 215);
+            color: rgb(17, 17, 21);
+            padding: 20px 0;   
+        }
+        nav{
+           display: flex; 
+           padding: 5px 10px;
+           justify-content: space-between;
+        }
+        span{
+            color: white;
+        }
+        nav ul{
+            list-style: none;
+            padding-top: 0;
+            text-align: center;
+            display: flex;
+            gap: 20px;
+        }
+        header a{
+            text-decoration: none; 
+           }
+               ul a li{
+            color:#fff;
+        }
+        ul a li:hover{
+            border-bottom: 2px solid orangered;
+            /* background-color: #fff; */
+            /* opacity: 0.5; */
+            padding: 5px;
+            border-radius: 5px;
+        }
+         @media screen and (min-width:1200px){
+                .Jackets-list{
+                    grid-template-columns: 1fr 1fr 1fr; 
+                  }
+                 .Jackets h5{
+                    font-size: 1.15rem;
+
+               }
+            }
+              .Jackets{
+            display: block;
+           }
+           .Jacket-img{
+            height: 15rem;
+            border-radius: var(--max-width);
+            margin-bottom: 1rem;
+           }
+           .Jacket h5{
+            margin-bottom: 0;
+            line-height: 1;
+            color: grey;
+           }
+           .Jackets p{
+            margin-bottom: 0;
+            line-height: 1;
+            margin-top: 0.5rem;
+            color: grey;
+            letter-spacing: normal;
+           }
+           @media screen and (min-width:576px){
+            .Jacket-list{
+                grid-template-columns: 1fr 1fr ;
+            }
+            .Jacket-img{
+                height: 18rem;
+            }
+            
+           }
+             @media screen and (min-width:992px){
+                .Jacket-container{
+                    grid-template-columns: 200px 1fr;
+                }
+                .Jacket p{
+                    font-size: 1rem;
+                }
+            }
+               .Jacket-container{
+            display: grid;
+            gap: 2rem 1rem;
+           
+           }
+           .Jacket-list{
+            display: grid;
+            gap: 8rem 8rem;
+            padding-bottom: 3rem;
+            }
+            .page{
+            
+            width: 90vw;
+            max-width: max-content;
+            margin: 0 auto;
+            padding-top: 2rem;
+            min-height: calc(100vh _(6rem +4rem));
+            
+           }
+             .page-footer{
+            height: 4rem;
+            text-align: center;
+            background:rgb(157, 84, 10);
+            color: rgb(12, 6, 6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           }
+           .page-footer p{
+            margin-bottom: 0;
+           }
+           .footer-logo
+           .page-footer a{
+            color: aqua;
+           }
+     
+        </style>
+</head>
+<body>
+      <header>
+        <nav>
+            <div class="logo">
+                <h1 class="">BIO<span>TECH</span></h1>
+                  </div>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="chemicals.html">Chemicals</a></li>
+                <li><a href="test.html">Test kits</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="Lab wears.html">Jackets</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main class="page">
+     <section class="Jackets-container">
+           <div>
+                <h4>Lab wears</h4>
+            </div>
+      <div class="Jacket-list">
+        
+                <a href="single-jacket.html" class="Jackets">
+                    <img src="./images/Lab Jackets and wears/3- M 3- G Gabi.jpg"
+                    class="img Jacket-img">
+                    <h5>Jacket</h5>
+                </a>
+                 <a href="single-jacket.html" class="Jackets">
+                    <img src="./images/Lab Jackets and wears/download (10).jpg" alt="Lab wears"
+                    class="img Jacket-img">
+                   <h5>Crocs</h5>
+                </a>
+                 <a href="single-jacket.html" class="Jackets">
+                    <img src="./images/Lab Jackets and wears/Best surgical gown raw manufacture.jpg" alt="Lab wears"
+                    class="img Jacket-img">
+                   <h5>surgical gown</h5>
+                </a>
+                 <a href="single-jacket.html" class="Jackets">
+                    <img src="./images/Lab Jackets and wears/download (11).jpg" alt="Lab wears"
+                    class="img Jacket-img">
+                   <h5>Croc</h5>
+                </a>
+                 <a href="single-jacket.html" class="Jackets">
+                    <img src="./images/Lab Jackets and wears/Talvania Hospital Gown Unisex Patient Medical Gowns Back Ties Fits up to XXL.jpg" alt="Lab wears" width="80%" height="80%"
+                    class="imgJacket-img">
+                   <h5>Patient gown</h5>
+                </a>
+                 <a href="single-jacket.html" class="Jackets">
+                    <img src="./images/Lab Jackets and wears/download (9).jpg" alt="Lab wears"
+                    class="img Jacket-img">
+                   <h5>Full sets</h5>
+                </a>
+                 <a href="single-jacket.html" class="Jackets">
+                    <img src="./images/Lab Jackets and wears/download (7).jpg" alt="Lab wears"
+                    class="img Jacket-img">
+                   <h5>Jackets</h5>
+                </a>
+                  <a href="single-jacket.html" class="Jackets">
+                    <img src="./images/Lab Jackets and wears/Bata de laboratorio científico objeto aislado fondo transparente _ PSD Premium generado con IA.jpg" alt="Lab wears"
+                    class="img Jacket-img">
+                   <h5>Jackets</h5>
+                </a>
+              
+               
+             
+      </div>
+      </section>
+      </main>
+         <footer class="page-footer">
+        <p>
+            &copy; <span id="date">2026</span>
+            <span class="footer-logo">BIOTECH</span>
+            Built by<a href="https://www.neville.com/"> BOB</a>
+        </p>
+    </footer>
+    
+    
+</body>
+</html>

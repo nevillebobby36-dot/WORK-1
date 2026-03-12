@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEMICAL PAGE</title>
+     <style>
+      header{
+            background-color: rgb(215, 233, 215);
+            color: rgb(17, 17, 21);
+            padding: 20px 0;   
+        }
+        nav{
+           display: flex; 
+           padding: 5px 10px;
+           justify-content: space-between;
+        }
+        span{
+            color: white;
+        }
+        nav ul{
+            list-style: none;
+            padding-top: 0;
+            text-align: center;
+            display: flex;
+            gap: 20px;
+        }
+        header a{
+            text-decoration: none; 
+           }
+               ul a li{
+            color:#fff;
+        }
+        ul a li:hover{
+            border-bottom: 2px solid orangered;
+            /* background-color: #fff; */
+            /* opacity: 0.5; */
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+         @media screen and (min-width:1200px){
+                .chemical-list{
+                    grid-template-columns: 1fr 1fr 1fr; 
+                  }
+                 .chemical h5{
+                    font-size: 1.15rem;
+
+               }
+            }
+              .chemicals{
+            display: block;
+           }
+           .chemical-img{
+            height: 15rem;
+            border-radius: var(--max-width);
+            margin-bottom: 1rem;
+           }
+           .chemical h5{
+            margin-bottom: 0;
+            line-height: 1;
+            color: grey;
+           }
+           .chemicals p{
+            margin-bottom: 0;
+            line-height: 1;
+            margin-top: 0.5rem;
+            color: grey;
+            letter-spacing: normal;
+           }
+           @media screen and (min-width:576px){
+            .chemical-list{
+                grid-template-columns: 1fr 1fr ;
+            }
+            .chemical-img{
+                height: 18rem;
+            }
+            
+           }
+             @media screen and (min-width:992px){
+                .chemical-container{
+                    grid-template-columns: 200px 1fr;
+                }
+                .chemical p{
+                    font-size: 1rem;
+                }
+            }
+               .chemical-container{
+            display: grid;
+            gap: 2rem 1rem;
+           
+           }
+           .tags-container{
+            
+             order: 1;
+             display: flex;
+             flex-direction: column;
+             padding-bottom: 3rem;
+
+           }
+           .chemical-list{
+            display: grid;
+            gap: 8rem 8rem;
+            padding-bottom: 3rem;
+            }
+            .page{
+            
+            width: 90vw;
+            max-width: max-content;
+            margin: 0 auto;
+            padding-top: 2rem;
+            min-height: calc(100vh _(6rem +4rem));
+            
+           }
+             .page-footer{
+            height: 4rem;
+            text-align: center;
+            background:rgb(157, 84, 10);
+            color: rgb(12, 6, 6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           }
+           .page-footer p{
+            margin-bottom: 0;
+           }
+           .footer-logo
+           .page-footer a{
+            color: aqua;
+           }
+
+        </style>
+</head>
+<body>
+     <header>
+        <nav>
+            <div class="logo">
+                <h1 class="">BIO<span>TECH</span></h1>
+                  </div>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="chemicals.html">Chemicals</a></li>
+                <li><a href="test.html">Test kits</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="Lab wears.html">Jackets</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main class="page">
+     <section class="chemicals-container">
+           <div>
+                <h4>CHEMICALS</h4>
+            </div>
+             <!-- end tags container-->
+      <div class="chemical-list">
+        
+                <a href="single-chemical.html" class="chemicals">
+                    <img src="./images/chemicals/Hydrochloric Acid 5Lt HCI 330g_L.jpg" alt="chemical"
+                    class="img chemical-img">
+                    <h5>Hydrochloric acid</h5>
+                </a>
+                <a href="single-chemical.html" class="chemicals">
+                    <img src="./images/chemicals/Activating Powder _ Black Money Cleaning MAchines.jpg" alt="chemical"
+                    class="img chemical-img">
+                    <h5>Activating powder</h5>
+                </a>
+                <a href="single-chemical.html" class="chemicals">
+                    <img src="./images/chemicals/Amazon_com_ Innovating Science Bacteria Stain Chemicals Set_ Industrial & Scientific.jpg" alt="chemical"
+                    class="img chemical-img">
+                    <h5>Bacteria stain</h5>
+                </a>
+                <a href="single-chemical.html" class="chemicals">
+                    <img src="./images/chemicals/Benedict's Solution, Laboratory Chemical Grade.jpg" alt="chemical"
+                    class="img chemical-img">
+                    <h5>Benedict solution</h5>
+                </a>
+                <a href="single-chemical.html" class="chemicals">
+                    <img src="./images/chemicals/Buy Chemtex Glacial Acetic Acid _ Anhydrous Ethanoic Acid - 1L Bottle Online at Best Prices in India - JioMart_.jpg" alt="chemical"
+                    class="img chemical-img">
+                    <h5>Acetic acid</h5>
+                </a>
+                <a href="single-chemical.html" class="chemicals">
+                    <img src="./images/chemicals/Efficascent Oil 100ml.jpg" alt="chemical"
+                    class="img chemical-img">
+                    <h5>efficascent oil</h5>
+                </a>
+                  <a href="single-chemical.html" class="chemicals">
+                    <img src="./images/chemicals/HIGH QUALITY SSD CHEMICALS SOLUTIONS _+27713004428.jpg" alt="chemical"
+                    class="img chemical-img">
+                    <h5>SSD</h5>
+                </a>
+                  <a href="single-chemical.html" class="chemicals">
+                    <img src="./images/chemicals/Why Choose Liquid Sandpaper Vs_ The Regular Stuff_.jpg" alt="chemical"
+                    class="img chemical-img">
+                    <h5>sand paper</h5>
+                </a>
+               
+             
+      </div>
+      </section>
+      </main>
+         <footer class="page-footer">
+        <p>
+            &copy; <span id="date">2026</span>
+            <span class="footer-logo">BIOTECH</span>
+            Built by<a href="https://www.neville.com/"> BOB</a>
+        </p>
+    </footer>
+    
+    
+    
+</body>
+</html>
