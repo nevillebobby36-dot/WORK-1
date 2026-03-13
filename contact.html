@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT PAGE</title>
+     <style>
+      header{
+            background-color: rgb(215, 233, 215);
+            color: rgb(17, 17, 21);
+            padding: 20px 0;   
+        }
+        nav{
+           display: flex; 
+           padding: 5px 10px;
+           justify-content: space-between;
+        }
+        span{
+            color: white;
+        }
+        nav ul{
+            list-style: none;
+            padding-top: 0;
+            text-align: center;
+            display: flex;
+            gap: 20px;
+        }
+        header a{
+            text-decoration: none; 
+         }
+              ul a li{
+            color:#fff;
+        }
+        ul a li:hover{
+            border-bottom: 2px solid orangered;
+            /* background-color: #fff; */
+            /* opacity: 0.5; */
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+     
+        </style>
+</head>
+<body>
+     <header>
+        <nav>
+            <div class="logo">
+                <h1 class="">BIO<span>TECH</span></h1>
+                  </div>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="chemicals.html">Chemicals</a></li>
+                <li><a href="test.html">Test kits</a></li>
+                <li><a href="contact.html">contact</a></li>
+                            <li><a href="Lab wears.html">Jackets</a></li>
+                </ul>
+        </nav>
+    </header>
+      <main class="page">
+        <section class="contact-container">
+            <article class="contact-info">
+                <h3>Want to get in touch?</h3>
+                </article>
+                <article>
+                    <form  class="form contact-form">
+                        <!--single form row-->
+                        <div class="form-row">
+                           <label for="Name"  class="form-label"> name
+                            </label>
+                            <input type="text" name="name" id="name" class="form-input" />
+                            </div>
+                            <!--end of single form row-->
+                                <!--single form row-->
+                        <div class="form-row">
+                           <label for="email"  class="form-label"> email
+                            </label>
+                            <input type="text" name="email" id="email" class="form-input" />
+                            </div>
+                            <!--end of single form row-->
+                           <div class="form-row">
+                            <label for="message" class="form-label">Message
+                                </label>
+                            <textarea name="message" id="message" class="form-textarea">
+                                </textarea>
+                            </div>
+                            <button type="submit" class="btn btn-block">
+                                submit
+                                </button>
+                        </form>
+                    </article>
+            </section>
+      
+    
+</body>
+</html>
