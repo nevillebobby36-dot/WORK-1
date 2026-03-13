@@ -128,15 +128,81 @@
            .page-footer a{
             color: aqua;
            }
+           .chemical-list{
+          display: flex;
+          flex-wrap: wrap;
+          gap: 200px;
+          padding: 20px;
+           }
+           .chemicals{
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            border-radius: 8px;
+            padding: 15px;
+            display: block;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.2s;
+            position: relative;
+           }
+           .chemicals:hover{
+            transform: translate(-5px);
+            box-shadow: 0 4px 15px rgb(0, 0, 0.0,1);
+           }
+           .img-container{
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            max-width: 140%;
+           }
+           .chemical-img{
+            width: 100%;
+            height: 200%;
+            object-fit: cover;
+            max-width: 100%;
+            display: block;
+            border-radius: 8px 8px 0 0;
+           }
+           .price{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgb(127, 255, 133);
+            color: rgb(255, 255, 255);
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            font-weight: bold;
+           }
+           h2{
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+           html{
+            scroll-behavior: smooth;
+           }
+           .top-button{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0.0,2);
+           }
 
         </style>
 </head>
 <body>
-     <header>
+     <header id="main-header">
         <nav>
             <div class="logo">
                 <h1 class="">BIO<span>TECH</span></h1>
-                  </div>
+                </div>
                 <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">about</a></li>
@@ -150,56 +216,80 @@
     <main class="page">
      <section class="chemicals-container">
            <div>
-                <h4>CHEMICALS</h4>
-            </div>
+                <h1>CHEMICALS</h1>
              <!-- end tags container-->
       <div class="chemical-list">
         
                 <a href="single-chemical.html" class="chemicals">
-                    <img src="./images/chemicals/Hydrochloric Acid 5Lt HCI 330g_L.jpg" alt="chemical"
+                    <div>
+                    <img src="./images/chemicals/HCL acid.jpg" alt="chemical"
                     class="img chemical-img">
-                    <h5>Hydrochloric acid</h5>
+                     <span class="price">$45</span>
+                  </div>
+                    <h2>Hydrochloric-acid</h2>
                 </a>
                 <a href="single-chemical.html" class="chemicals">
-                    <img src="./images/chemicals/Activating Powder _ Black Money Cleaning MAchines.jpg" alt="chemical"
+                    <div>
+                    <img src="./images/chemicals/SSD chemocals.jpg" alt="chemical"
                     class="img chemical-img">
-                    <h5>Activating powder</h5>
+                     <span class="price">$56</span>
+                    </div>
+                    <h2>Activating-powder</h2>
                 </a>
                 <a href="single-chemical.html" class="chemicals">
-                    <img src="./images/chemicals/Amazon_com_ Innovating Science Bacteria Stain Chemicals Set_ Industrial & Scientific.jpg" alt="chemical"
+                    <div>
+                    <img src="./images/chemicals/bacteria stain.jpg" alt="chemical"
                     class="img chemical-img">
-                    <h5>Bacteria stain</h5>
+                     <span class="price">$50</span>
+                    </div>
+                    <h2>Bacteria-stain</h2>
                 </a>
                 <a href="single-chemical.html" class="chemicals">
-                    <img src="./images/chemicals/Benedict's Solution, Laboratory Chemical Grade.jpg" alt="chemical"
+                     <div>
+                    <img src="./images/chemicals/benedicts soliution.jpg" alt="chemical"
                     class="img chemical-img">
-                    <h5>Benedict solution</h5>
+                     <span class="price">$45</span>
+                    </div>
+                    <h2>Benedict-solution</h2>
                 </a>
                 <a href="single-chemical.html" class="chemicals">
-                    <img src="./images/chemicals/Buy Chemtex Glacial Acetic Acid _ Anhydrous Ethanoic Acid - 1L Bottle Online at Best Prices in India - JioMart_.jpg" alt="chemical"
+                    <div>
+                    <img src="./images/chemicals/acetic acid.jpg" alt="chemical"
                     class="img chemical-img">
-                    <h5>Acetic acid</h5>
+                     <span class="price">$45</span>
+                    </div>
+                    <h2>Acetic-acid</h2>
                 </a>
                 <a href="single-chemical.html" class="chemicals">
+                    <div>
                     <img src="./images/chemicals/Efficascent Oil 100ml.jpg" alt="chemical"
                     class="img chemical-img">
-                    <h5>efficascent oil</h5>
+                     <span class="price">$60</span>
+                    </div>
+                    <h2>efficascent-oil</h2>
                 </a>
                   <a href="single-chemical.html" class="chemicals">
-                    <img src="./images/chemicals/HIGH QUALITY SSD CHEMICALS SOLUTIONS _+27713004428.jpg" alt="chemical"
+                    <div>
+                    <img src="./images/chemicals/SSD solution.jpg" alt="chemical"
                     class="img chemical-img">
-                    <h5>SSD</h5>
+                     <span class="price">$45</span>
+                    </div>
+                    <h2>SSD</h2>
                 </a>
                   <a href="single-chemical.html" class="chemicals">
-                    <img src="./images/chemicals/Why Choose Liquid Sandpaper Vs_ The Regular Stuff_.jpg" alt="chemical"
+                    <div>
+                    <img src="./images/chemicals/Water.jpg" alt="chemical"
                     class="img chemical-img">
-                    <h5>sand paper</h5>
+                    <span class="price">$20</span>
+                    </div>
+                    <h2>distilled-water</h2>
                 </a>
                
              
       </div>
       </section>
       </main>
+       <a href="#main-header" class="top-button">Back to header</a>
          <footer class="page-footer">
         <p>
             &copy; <span id="date">2026</span>
