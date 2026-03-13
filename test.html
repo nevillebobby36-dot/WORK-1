@@ -130,11 +130,86 @@
            .page-footer a{
             color: aqua;
            }
-          
+                .image-container{
+            display: flex;
+            justify-content: flex-end;
+           }
+         .chemical-list{
+          display: flex;
+          flex-wrap: wrap;
+          gap: 250px;
+          padding: 20px;
+           }
+           .chemicals{
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            border-radius: 8px;
+            padding: 15px;
+            display: block;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.2s;
+            position: relative;
+           }
+           .chemicals:hover{
+            transform: translate(-5px);
+            box-shadow: 0 4px 15px rgb(0, 0, 0.0,1);
+           }
+           .img-container{
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            max-width: 140%;
+           }
+           .chemical-img{
+            width: 100%;
+            height: 200%;
+            object-fit: cover;
+            max-width: 100%;
+            display: block;
+            border-radius: 8px 8px 0 0;
+           }
+             .price{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgb(127, 255, 133);
+            color: rgb(255, 255, 255);
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            font-weight: bold;
+           }
+           button{
+            border-radius: 25px;
+            width: fit-content;
+            padding: 10px 30px;
+            border: 1px solid #777;
+            background-color: rgb(40, 228, 43);
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+           }
+           .top-button{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0.0,2);
+           }
+
+
         </style>
 </head>
 <body>
-     <header>
+     <header id="main-header">
         <nav>
             <div class="logo">
                 <h1 class="">BIO<span>TECH</span></h1>
@@ -152,79 +227,95 @@
       <main class="page">
      <section class="Test-container">
            <div>
-                <h4>Test kits</h4>
+                <h1>TEST KITS</h1>
             </div>
          
       <div class="test-list">
         
-                <a href="single-test.html" class="tests">
-                    <img src="./images/Test kits/Amazon_com_ Pregnancy & Maternity Products - Pregnancy & Maternity Products_ Baby Products.jpg" alt="test"
-                    class="img test-img">
-                    <h5>pregnancy test kit</h5>
+                <a href="single-chemical.html" class="chemicals">
+                    <div>
+                    <img src="./images/Test kits/CRP test  - 2 testy.jpg" width="200%" height="200%" alt="chemical"
+                    class="img chemical-img">
+                     <span class="price">$15up</span>
+                  </div>
+                    <h2>CRP</h2>
                 </a>
-                
-                <a href="single-test.html" class="tests">
-                    <img src="./images/Test kits/CRP test  - 2 testy.jpg" alt="test"
-                    class="img test-img">
-                    <h5>CRP</h5>
+                <a href="single-chemical.html" class="chemicals">
+                    <div>
+                    <img src="./images/Test kits/Flowflex Covid-19 Lateral Flow Test.jpg" alt="chemical"
+                    class="img chemical-img">
+                     <span class="price">$20up</span>
+                    </div>
+                    <h2>COVID-19</h2>
                 </a>
-                
-                <a href="single-test.html" class="tests">
-                    <img src="./images/Test kits/Flowflex Covid-19 Lateral Flow Test Kit for Self-Care _ One-Step Test SARS-CoV-2 Antigen Test Kit.jpg" alt="test"
-                    class="img test-img">
-                    <h5>covid-19</h5>
+                    <a href="single-chemical.html" class="chemicals">
+                    <div>
+                    <img src="./images/Test kits/Hcg Pregnancy test Uncut Sheets Hcg.jpg" width="200%" height="200%" alt="chemical"
+                    class="img chemical-img">
+                     <span class="price">$15up</span>
+                  </div>
+                    <h2>PREGNANCY-KITS</h2>
                 </a>
-                
-                <a href="single-test.html" class="tests">
-                    <img src="./images/Test kits/HIV Sample Collection Kit, no additional lab fees  5 TEST.jpg" alt="test"
-                    class="img test-img">
-                    <h5>HIV</h5>
+                <a href="single-chemical.html" class="chemicals">
+                    <div>
+                    <img src="./images/Test kits/HIV sampple.jpg" alt="chemical"
+                    class="img chemical-img">
+                     <span class="price">$25up</span>
+                    </div>
+                    <h2>HIV</h2>
                 </a>
-                
-                <a href="single-test.html" class="tests">
-                    <img src="./images/Test kits/Kit de bandelettes de test de routine urinaire, bandelettes de test Ph, bandelettes de test de.jpg" alt="test"
-                    class="img test-img">
-                    <h5>URINALYSIS</h5>
+                    <a href="single-chemical.html" class="chemicals">
+                    <div>
+                    <img src="./images/Test kits/Malaria PF Pan Rapid test Kits.jpg" width="200%" height="200%" alt="chemical"
+                    class="img chemical-img">
+                     <span class="price">$15up</span>
+                  </div>
+                    <h2>MALARIA</h2>
                 </a>
-                
-                <a href="single-test.html" class="tests">
-                    <img src="./images/Test kits/Malaria PF Pan Rapid test Kits Disposable.jpg" alt="test"
-                    class="img test-img">
-                    <h5>MALARIA</h5>
+                <a href="single-chemical.html" class="chemicals">
+                    <div>
+                    <img src="./images/Test kits/pregnancy test.jpg" alt="chemical"
+                    class="img chemical-img">
+                     <span class="price">$20up</span>
+                    </div>
+                    <h2>PREGNANCY TEST KIT</h2>
                 </a>
-                
-                <a href="single-test.html" class="tests">
-                    <img src="./images/Test kits/Rapid Diagnostic Kits  Urinalysis  Drug Abuse.jpg" alt="test"
-                    class="img test-img">
-                    <h5>URINALYSIS</h5>
+                    <a href="single-chemical.html" class="chemicals">
+                    <div>
+                    <img src="./images/Test kits/Rapid Test Syphilis 1.jpg" width="200%" height="200%" alt="chemical"
+                    class="img chemical-img">
+                     <span class="price">$15up</span>
+                  </div>
+                    <h2>SYPHILIS</h2>
                 </a>
-                
-                <a href="single-test.html" class="tests">
-                    <img src="./images/Test kits/Rapid Prostate PSA Home Test Kit, Clinically Accurate and Complete.jpg" alt="test"
-                    class="img test-img">
-                    <h5>Prostate</h5>
-                    </a>
-                    
-                <a href="single-test.html" class="tests">
-                    <img src="./images/Test kits/Three in One HBsAg HCV HIV Combination Rapid.jpg" alt="test"
-                    class="img test-img">
-                    <h5>HBsAg and HCV combine</h5>
+                <a href="single-chemical.html" class="chemicals">
+                    <div>
+                    <img src="./images/Test kits/Rapid Diagnostic Kits  Urinalysis.jpg" alt="chemical"
+                    class="img chemical-img">
+                     <span class="price">$40up</span>
+                    </div>
+                    <h2>URINALYSIS</h2>
                 </a>
-                  <a href="single-test.html" class="tests">
-                    <img src="./images/Test kits/Safecare Medical Determine Hcv Rapid Self.jpg" alt="test"
-                    class="img test-img">
-                    <h5>HCV</h5>
+                    <a href="single-chemical.html" class="chemicals">
+                    <div>
+                    <img src="./images/Test kits/water test kits.jpg" width="200%" height="200%" alt="chemical"
+                    class="img chemical-img">
+                     <span class="price">$15up</span>
+                  </div>
+                    <h2>WATER KITS</h2>
                 </a>
-               
-             
-      </div>
+                <a href="single-chemical.html" class="chemicals">
+                    <div>
+                    <img src="./images/Test kits/Three in One HBsAg HCV HIV.jpg" alt="chemical"
+                    class="img chemical-img">
+                     <span class="price">$28up</span>
+                    </div>
+                    <h2>3 IN 1</h2>
+                </a>
+        </div>
       </section>
       </main>
-      <div>
-        <h1>
-            <button>Lab wears</button>
-        </h1>
-      </div>
+        <a href="#main-header" class="top-button">Back to header</a>
          <footer class="page-footer">
         <p>
             &copy; <span id="date">2026</span>
