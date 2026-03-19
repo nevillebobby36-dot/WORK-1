@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME PAGE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <style>
       header{
             background-color: rgb(215, 233, 215);
@@ -99,10 +103,12 @@
            }
            .hero-content p{
          font-size: 1rem;
+         display: flex;
            }
            .hero-content h1{
             font-size: 2rem;
             margin-bottom: 15px;
+            color: rgb(27, 159, 186);"
            }
            .image-container{
             display: flex;
@@ -241,14 +247,88 @@
             display: flex !important;
         }
     }
+    body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space space-between;
+    flex-direction: column;
+    font-family: "Lobster Two", sans-serif, Arial, Helvetica, sans-serif;
+}
+.icons i:hover{
+    transform:translate(-30px);
+    transition: 0.5;
+}
+.animate-text{
+    display: inline-block;
+    animation: slidein 2s ease-out forwards;
+}
+@keyframes slidein{
+     0%{
+        opacity: 0;
+        transform:translateX(-50px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(-0px);
+    }
+}
+@keyframes techGlow{
+    0%, 100%{
+        text-shadow:0 0 5px #1b9fba, 0 0 10px #1b9fba;
+    }
+    50%{
+        text-shadow: 0 0 20px #1b9fba, 0 0 30px #ffffff;
+        color:#ffffff;
+    }
+}
+.hero-content p{
+    opacity:0;
+    animation: slidein 1s ease-out 0.5s forwards;
+}
+.hero-content .Home-btn:nth-child(1){
+    opacity: 0;
+    animation: slidein 1s ease-out 0.8s forwards;
+}
+.hero-content .Home-btn:nth-child(2){
+    opacity: 0;
+    animation: slidein 1s ease-out 1.1s forwards;
+}
+.logo h1 span{
+    display: inline-block;
+    animation: techGlow 3s ease-in-out infinite;
+}
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-two-bold {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lobster-two-regular-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lobster-two-bold-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
      
         </style>
 </head>
 <body>
     <header  id="main-header">
         <nav class="navbar">
-            <div class="logo">
-                <h1 class="">BIO<span>TECH</span></h1>
+            <div class="logo" >
+                <h1 class="lobster-two-b0ld-italic">BIO<span>TECH</span></h1>
                    </div>
                    <div class="menu-container"></div>
                   <button class="hamburger" id="hamburger">
@@ -270,8 +350,8 @@
     
    <section class="hero-section">
     <div class="hero-content">
-        <h1 \>FILL YOUR CLINIC WITH US!</h1>
-        <p style="display: flex;">Get your laboratory machines,test kits for your projects and biological research .Also, for chemical researches carried out in the industry
+        <h1 class="text animate-text">FILL YOUR CLINIC WITH US!</h1>
+        <p>Get your laboratory machines,test kits for your projects and biological research .Also, for chemical researches carried out in the industry
         </p>
         <a href="Registration.html" class="Home-btn">Register now</a>
          <a href="login.html" class="Home-btn">Login</a>
@@ -325,6 +405,14 @@
             <span class="footer-logo">BIOTECH</span>
             Built by<a href="https://www.neville.com/"> BOB</a>
         </p>
+ <div class="icons">
+     <a href="http:linkedin"  target="_blank">
+   <i class="fa-brands fa-linkedin"></i>
+   </a>
+    <a href="http:facebook"  target="_blank">
+    <i class="fa-brands fa-facebook"></i>
+  </a>
+</div>
     </footer>
     <script src="script.js"></script> 
 </body>
