@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+      box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center,rgb(97, 113, 162) );
+    margin: 0;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: #142948;
+    width: 350px;
+    padding: 40px 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+.profile-icon {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.profile-icon i {
+    font-size: 40px;
+    color: #45457d;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-field {
+    background-color: #0f274d;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 12px;
+}
+
+.input-field i {
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.input-field input {
+    background: none;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    width: 100%;
+}
+
+.input-field input::placeholder {
+    color: #94a3b8;
+}
+.forgot-pass {
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.forgot-pass a {
+    color: #94a3b8;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #3469a1;
+}
+     

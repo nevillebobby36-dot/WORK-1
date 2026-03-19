@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <style>
-      header{
+</head>
+<body>
+    <style>
+        header{
             background-color: rgb(215, 233, 215);
             color: rgb(17, 17, 21);
             padding: 20px 0;   
@@ -37,34 +39,9 @@
             /* opacity: 0.5; */
             padding: 5px;
             border-radius: 5px;
+
         }
-      
-            .page{
-            
-            width: 90vw;
-            max-width: max-content;
-            margin: 0 auto;
-            padding-top: 2rem;
-            min-height: calc(100vh _(6rem +4rem));
-            
-           }
-             .page-footer{
-            height: 4rem;
-            text-align: center;
-            background:rgb(157, 84, 10);
-            color: rgb(12, 6, 6);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-           }
-           .page-footer p{
-            margin-bottom: 0;
-           }
-           .footer-logo
-           .page-footer a{
-            color: aqua;
-           }
-             @media screen and (min-width:1200px){
+         @media screen and (min-width:1200px){
                 .chemical-list{
                     grid-template-columns: 1fr 1fr 1fr; 
                   }
@@ -94,7 +71,7 @@
             letter-spacing: normal;
            }
            @media screen and (min-width:576px){
-            .jacket-list{
+            .chemical-list{
                 grid-template-columns: 1fr 1fr ;
             }
             .chemical-img{
@@ -103,14 +80,14 @@
             
            }
              @media screen and (min-width:992px){
-                .jacket-container{
+                .chemical-container{
                     grid-template-columns: 200px 1fr;
                 }
                 .chemical p{
                     font-size: 1rem;
                 }
             }
-               .jacket-container{
+               .chemical-container{
             display: grid;
             gap: 2rem 1rem;
            
@@ -123,12 +100,43 @@
              padding-bottom: 3rem;
 
            }
-           .jacket-list{
+           .chemical-list{
             display: grid;
             gap: 8rem 8rem;
             padding-bottom: 3rem;
             }
-           .jackets{
+            .page{
+            
+            width: 90vw;
+            max-width: max-content;
+            margin: 0 auto;
+            padding-top: 2rem;
+            min-height: calc(100vh _(6rem +4rem));
+            
+           }
+             .page-footer{
+            height: 4rem;
+            text-align: center;
+            background:rgb(157, 84, 10);
+            color: rgb(12, 6, 6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           }
+           .page-footer p{
+            margin-bottom: 0;
+           }
+           .footer-logo
+           .page-footer a{
+            color: aqua;
+           }
+           .chemical-list{
+          display: flex;
+          flex-wrap: wrap;
+          gap: 200px;
+          padding: 20px;
+           }
+           .chemicals{
             text-decoration: none;
             color: white;
             background-color: black;
@@ -140,7 +148,7 @@
             transition: transform 0.2s;
             position: relative;
            }
-           .jackets:hover{
+           .chemicals:hover{
             transform: translate(-5px);
             box-shadow: 0 4px 15px rgb(0, 0, 0.0,1);
            }
@@ -172,16 +180,8 @@
             margin-top: 10px;
             font-size: 1.1rem;
         }
-            button{
-            border-radius: 25px;
-            width: fit-content;
-            padding: 10px 30px;
-            border: 1px solid #777;
-            background-color: rgb(40, 228, 43);
-            cursor: pointer;
-            align-items: center;
-            justify-content: center;
-            display: flex;
+           html{
+            scroll-behavior: smooth;
            }
            .top-button{
             position: fixed;
@@ -196,67 +196,14 @@
             z-index: 1000;
             box-shadow: 0 4px 8px rgba(0, 0, 0.0,2);
            }
-           .navbar{
-     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    color: rgb(7, 27, 163);
-}
-.nav-links{
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-.menu-container{
-    position: relative;
-}
-.hamburger{
-    display: none;
-    cursor: pointer;
-    background: none;
-    border: none;
-   background: #1a1111;
-}
-.bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background: white;
-}
-@media (max-width:768px){
-    .hamburger{
-        display: block;
-    }
-    .nav-links{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-       left: 72%;
-        width: 12%;
-        text-align: center;
-         top: 16%;  
-        .nav-links.active {
-            display: flex !important;
-        }
-    }
-     
+
         </style>
-</head>
-<body>
-      <header  id="main-header">
-              <nav class="navbar">
+     <header id="main-header">
+        <nav>
             <div class="logo">
                 <h1 class="">BIO<span>TECH</span></h1>
-                   </div>
-                   <div class="menu-container"></div>
-                  <button class="hamburger" id="hamburger">
-                    <span class="bar"></span>
-                     <span class="bar"></span>
-                      <span class="bar"></span>
-                 </button>
-                <ul class="nav-links" id="nav-links">
+                </div>
+                <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">about</a></li>
                 <li><a href="chemicals.html">Chemicals</a></li>
@@ -267,94 +214,79 @@
         </nav>
     </header>
     <main class="page">
-     <section class="jackets-container">
+     <section class="chemicals-container">
            <div>
-                <h1>LAB WEARS</h1>
-            </div>
-                    <div class="jacket-list">
-              <a href="single-jacket.html" class="jackets">
+                <h1>ANALYZERS</h1>
+             <!-- end tags container-->
+      <div class="chemical-list">
+        
+                <a href="single-chemical.html" class="chemicals">
                     <div>
-                    <img src="./images/Lab Jackets and wears/download (7).jpg"  alt="chemical"
+                    <img src="./images/lab instruments/Analisador Hematológico BC-2800.jpg" alt="chemical"
                     class="img chemical-img">
-                     <span class="price">$14</span>
+                     <span class="price">$200</span>
                   </div>
-                    <h2>JACKET</h2>
+                    <h2>Hematology Analyzer</h2>
                 </a>
-                <a href="single-jacket.html" class="jackets">
+                <a href="single-chemical.html" class="chemicals">
                     <div>
-                    <img src="./images/Lab Jackets and wears/3- M 3- G Gabi.jpg" alt="chemical"
+                    <img src="./images/lab instruments/Auto Chemistry Analyzer.jpg" alt="chemical"
                     class="img chemical-img">
-                     <span class="price">$20</span>
+                     <span class="price">$250</span>
                     </div>
-                    <h2>Lab jacket</h2>
+                    <h2>Chemistry Analyzer</h2>
                 </a>
-              <a href="single-jacket.html" class="jackets">
+                <a href="single-chemical.html" class="chemicals">
                     <div>
-                    <img src="./images/Lab Jackets and wears/Best surgical gown raw manufacture.jpg"  alt="chemical"
+                    <img src="./images/lab instruments/download (4).jpg" alt="chemical"
                     class="img chemical-img">
-                     <span class="price">$14</span>
-                  </div>
-                    <h2>surgical gown</h2>
-                </a>
-                <a href="single-jacket.html" class="jackets">
-                    <div>
-                    <img src="./images/Lab Jackets and wears/patient gown.jpg" alt="chemical"
-                    class="img chemical-img">
-                     <span class="price">$12</span>
+                     <span class="price">$100</span>
                     </div>
-                    <h2>Patient gown</h2>
+                    <h2>Centrifuge</h2>
                 </a>
-              <a href="single-jacket.html" class="jackets">
-                    <div>
-                    <img src="./images/Lab Jackets and wears/download (10).jpg"  alt="chemical"
+                <a href="single-chemical.html" class="chemicals">
+                     <div>
+                    <img src="./images/lab instruments/download (5).jpg" alt="chemical"
                     class="img chemical-img">
-                     <span class="price">$10</span>
-                  </div>
-                    <h2>COVER SLIPPERS</h2>
-                </a>
-                <a href="single-jacket.html" class="jackets">
-                    <div>
-                    <img src="./images/Lab Jackets and wears/download (11).jpg" alt="chemical"
-                    class="img chemical-img">
-                     <span class="price">$10</span>
+                     <span class="price">$180</span>
                     </div>
-                    <h2>CROCS</h2>
+                    <h2>Microscope</h2>
                 </a>
-              <a href="single-jacket.html" class="jackets">
+                <a href="single-chemical.html" class="chemicals">
                     <div>
-                    <img src="./images/Lab Jackets and wears/uniform.jpg"  alt="chemical"
+                    <img src="./images/lab instruments/autoclave.jpg" alt="chemical"
                     class="img chemical-img">
-                     <span class="price">$16up</span>
-                  </div>
-                    <h2>FULL SETS</h2>
-                </a>
-                <a href="single-jacket.html" class="jackets">
-                    <div>
-                    <img src="./images/Lab Jackets and wears/download (12).jpg" alt="chemical"
-                    class="img chemical-img">
-                     <span class="price">$10</span>
+                     <span class="price">$180</span>
                     </div>
-                    <h2>CROCS</h2>
+                    <h2>Autoclaves</h2>
                 </a>
-              <a href="single-jacket.html" class="jackets">
+                <a href="single-chemical.html" class="chemicals">
                     <div>
-                    <img src="./images/Lab Jackets and wears/download (8).jpg"  alt="chemical"
+                    <img src="./images/lab instruments/Electrolyte analyzer.jpg" alt="chemical"
                     class="img chemical-img">
-                     <span class="price">$18</span>
-                  </div>
-                    <h2>FULL SETS</h2>
-                </a>
-                <a href="single-jacket.html" class="jackets">
-                    <div>
-                    <img src="./images/Lab Jackets and wears/download (9).jpg" alt="chemical"
-                    class="img chemical-img">
-                     <span class="price">$18</span>
+                     <span class="price">$60</span>
                     </div>
-                    <h2>FULL SETS</h2>
+                    <h2>Electrolyte analyzer</h2>
                 </a>
-        </div>
-              
+                  <a href="single-chemical.html" class="chemicals">
+                    <div>
+                    <img src="./images/lab instruments/water testing.jpg" alt="chemical"
+                    class="img chemical-img">
+                     <span class="price">$45</span>
+                    </div>
+                    <h2>water testing</h2>
+                </a>
+                  <a href="single-chemical.html" class="chemicals">
+                    <div>
+                    <img src="./images/lab instruments/Hb meter.jpg" alt="chemical"
+                    class="img chemical-img">
+                    <span class="price">$20</span>
+                    </div>
+                    <h2>Hemoglobin meter</h2>
+                </a>
                
+             
+      </div>
       </section>
       </main>
        <a href="#main-header" class="top-button">Back to header</a>
@@ -365,6 +297,5 @@
             Built by<a href="https://www.neville.com/"> BOB</a>
         </p>
     </footer>
-     <script src="script.js"></script> 
 </body>
 </html>

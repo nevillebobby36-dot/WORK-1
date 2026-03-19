@@ -133,21 +133,72 @@
            .footer-logo
            .page-footer a{
             color: aqua;
-           }
+           } 
+           .navbar{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: rgb(7, 27, 163);
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.menu-container{
+    position: relative;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+   background: #1a1111;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: white;
+}
+@media (max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+       left: 76%;
+        width: 20%;
+        text-align: center;
+         top: 14%;  
+        .nav-links.active {
+            display: flex !important;
+        }
+    }
+     
      
         </style>
 </head>
 <body>
      <header>
-        <nav>
+        <nav class="navbar">
             <div class="logo">
                 <h1 class="">BIO<span>TECH</span></h1>
-                  </div>
-                <ul>
+                   </div>
+                   <div class="menu-container"></div>
+                  <button class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                     <span class="bar"></span>
+                      <span class="bar"></span>
+                 </button>
+                <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">about</a></li>
                 <li><a href="chemicals.html">Chemicals</a></li>
-                <li><a href="test.html">Test kits</a></li>
                 <li><a href="contact.html">contact</a></li>
                             <li><a href="Lab wears.html">Jackets</a></li>
                 </ul>
@@ -195,5 +246,6 @@
             Built by<a href="https://www.neville.com/"> BOB</a>
         </p>
     </footer>
+     <script src="script.js"></script> 
 </body>
 </html>

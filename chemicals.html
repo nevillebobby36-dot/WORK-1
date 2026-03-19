@@ -194,16 +194,68 @@
             z-index: 1000;
             box-shadow: 0 4px 8px rgba(0, 0, 0.0,2);
            }
+           .navbar{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: rgb(7, 27, 163);
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.menu-container{
+    position: relative;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+   background: #1a1111;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: white;
+}
+@media (max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+       left: 76%;
+        width: 12%;
+        text-align: center;
+         top: 14%;  
+        .nav-links.active {
+            display: flex !important;
+        }
+    }
+     
 
         </style>
 </head>
 <body>
      <header id="main-header">
-        <nav>
+            <nav class="navbar">
             <div class="logo">
                 <h1 class="">BIO<span>TECH</span></h1>
-                </div>
-                <ul>
+                   </div>
+                   <div class="menu-container"></div>
+                  <button class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                     <span class="bar"></span>
+                      <span class="bar"></span>
+                 </button>
+                <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">about</a></li>
                 <li><a href="chemicals.html">Chemicals</a></li>
@@ -217,7 +269,6 @@
      <section class="chemicals-container">
            <div>
                 <h1>CHEMICALS</h1>
-             <!-- end tags container-->
       <div class="chemical-list">
         
                 <a href="single-chemical.html" class="chemicals">
@@ -297,8 +348,6 @@
             Built by<a href="https://www.neville.com/"> BOB</a>
         </p>
     </footer>
-    
-    
-    
+   <script src="script.js"></script>  
 </body>
 </html>
